@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The title determines the content in the tab of your browser -->
+	<title>My Page</title>
+	<!-- This is the link to the Bootstrap CSS, this is placed above my custom CSS so my custom css will load after the bootstrap css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+	<!-- This is the basic Bootstrap Navbar component with some custom information in there -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="index.html">
+			Brand
+		</a>
+		<!-- In Bootstrap they have functionality built into the navbar-toggler that allows for a responsive nav menu  -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="landing_page.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="data.html">Data</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="comparisons.html">Comparisons</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Screenshots
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="image_pages/one.html">One</a>
+						<a class="dropdown-item" href="image_pages/two.html">Two</a>
+						<a class="dropdown-item" href="image_pages/three.html">Three</a>
+						<a class="dropdown-item" href="image_pages/four.html">Four</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--
+		This is the Bootstrap Jumbotron Component, I do not have this in the section with the container class because the container class includes margin and I think that full width headers look good.
+	-->
+	<div class="jumbotron">
+		<h1 class="display-4">This is a Landing Page!</h1>
+		<p class="lead">This is a simple page, built using Bootstrap!</p>
+		<hr class="my-4">
+		<p>Bootstrap is a Design System or CSS Framework that helps increase the speed and consistency for web development!</p>
+		<a class="btn btn-primary btn-lg" href="https://getbootstrap.com" role="button">Learn more here!</a>
+	</div>
+	<!-- All of the content in this container will have margin, this also initializes the Bootstrap Grid -->
+	<section class="container">
+		<!-- I can utilize the container for the margins if I don't have multiple items, I do not have to use rows and columns -->
+		<div class="card mb-3">
+			<img src="assets/images/class.png" class="card-img-top" alt="The Class">
+			<div class="card-body">
+				<h5 class="card-title">Card Title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				<p class="card-text"><small class="text-muted">With some small text because that's professional looking.</small></p>
+			</div>
+		</div>
+
+		<!-- Lets say I want a grid of four cards, 2 by 2 on medium-large screens but on small screens one on top of the other -->
+		<div class="row">
+			<div class="col-md-6">
+				<!-- Reusing the same card from above -->
+				<div class="card mb-3">
+					<img src="assets/images/class.png" class="card-img-top" alt="The Class">
+					<div class="card-body">
+						<h5 class="card-title">Card Title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text"><small class="text-muted">With some small text because that's professional looking.</small></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<!-- Reusing the same card from above -->
+				<div class="card mb-3">
+					<img src="assets/images/class.png" class="card-img-top" alt="The Class">
+					<div class="card-body">
+						<h5 class="card-title">Card Title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text"><small class="text-muted">With some small text because that's professional looking.</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<!-- Reusing the same card from above -->
+				<div class="card mb-3">
+					<img src="assets/images/class.png" class="card-img-top" alt="The Class">
+					<div class="card-body">
+						<h5 class="card-title">Card Title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text"><small class="text-muted">With some small text because that's professional looking.</small></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<!-- Reusing the same card from above -->
+				<div class="card mb-3">
+					<img src="assets/images/class.png" class="card-img-top" alt="The Class">
+					<div class="card-body">
+						<h5 class="card-title">Card Title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text"><small class="text-muted">With some small text because that's professional looking.</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- FOOTER SECTION -->
+	<footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+	<!-- END FOOTER SECTION -->
+
+	<!--
+		This is where I place my script tags, this is very similar to the link tags we have in the <head> section. The reason we place these at the bottom of the body is twofold:
+			1. We want our HTML to load before our JS for page performance reasons
+			2. We want our JS to load after HTML in order to make sure any JS attached to DOM elements can find those on the DOM
+			Resource: https://faqs.skillcrush.com/article/176-where-should-js-script-tags-be-linked-in-html-documents
+	-->
+	<!-- This is a link to the external minified jQuery library which Bootstrap leverages for interactive elements, documentation: https://jquery.com/ -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<!-- This is a link to the external Popper.js library which Bootstrap leverages for interactive elements, documentation: https://popper.js.org/ -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<!-- This is a link to the Bootstrap JS library, that Bootstrap has written to use with some of their interactive componenets -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
